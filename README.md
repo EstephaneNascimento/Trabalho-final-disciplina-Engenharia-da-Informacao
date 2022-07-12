@@ -15,3 +15,7 @@ A página padrão (http://localhost:8000) faz a busca de documentos com base no 
 4. Rode o comando python manage.py runserver
 5. Acesse http://localhost:8000
 
+#### Tela Principal
+
+![tela_de_busca](https://user-images.githubusercontent.com/52283702/178545439-031a7e8c-f2a2-461a-bc02-f9bc7e5fa2ef.jpg)
+
