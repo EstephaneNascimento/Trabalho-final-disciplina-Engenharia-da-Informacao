@@ -1,0 +1,22 @@
+{% extends 'index_doc2vec.html' %}
+{% block content %}
+
+<div class="container-fluid mt-5">
+    <div class="row gx-5 bg-secondary text-white d-flex mb-5" style="border-radius: 20px; height: 40px; margin-left: 50px; margin-right: 50px;">
+        <div class="col mt-2 mb-2" style="text-align:center;">
+            <h5>Precision:&nbsp;{{precision}}</h5>
+        </div>
+        <div class="col mt-2 mb-2" style="text-align:center;">
+            <h5>Recall:&nbsp;{{recall}}</h5>
+        </div>
+        
+    </div>
+    
+    <ul class="list-group list-group-flush">
+        {% for item in dados %}
+            <li class="list-group-item ">{{item}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

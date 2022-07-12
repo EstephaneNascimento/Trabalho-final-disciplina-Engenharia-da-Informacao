@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/logo_size_invert.ico' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+        .letra{
+            color: rgba(12, 12, 12, 0.683);
+            font-family: 'Barrio', cursive; 
+        }
+        .size{
+            width: 15%;
+            height: 50px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>ResearchJournal</title>
+</head>
+<body class="p-3 mb-2 bg-transparent text-dark">
+    <div class="container-fluid mt-5">
+        <p class="letra text-center fs-1">Research Journal</p>    
+        <form class="mt-5 d-flex" role="search" action="pesquisar" method="POST">
+                                  {% csrf_token %} 
+            <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search" name="query" value="{{item}}">
+            <button class="btn btn btn-secondary size" type="submit">
+                <img src="{% static 'img/logo_size.png' %}" alt="logo-journal" width="100%" height="100%">
+            </button>
+        </form>
+    </div>
+    {% block content %} 
+       
+    {% endblock %}
+</body>
+</html>
