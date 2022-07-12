@@ -7,4 +7,11 @@ Foi desenvolvido uma interface para busca de documentos que possuem as palavras 
 
 A página padrão (http://localhost:8000) faz a busca de documentos com base no Bag of words, enquanto que para realizar uma consulta com o Doc2vec acesse (http://localhost:8000/doc2vec)
 
+### Rodar o projeto
+
+1. Entre na pasta recuperacao_de_informacao
+2. Rode o comando workon projeto
+3. Entre na pasta rec_info
+4. Rode o comando python manage.py runserver
+5. Acesse http://localhost:8000
 
