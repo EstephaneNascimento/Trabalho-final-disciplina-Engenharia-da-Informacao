@@ -1,2 +1,10 @@
 # Trabalho-final-disciplina-Engenharia-da-Informacao
 Repositório criado para código do trabalho final da disciplina Engenharia da Informação
+
+### Projeto Research Journal 
+
+Foi desenvolvido uma interface para busca de documentos que possuem as palavras colocadas na consulta pelo usuário. Foram utilizados o Bag of words e Doc2vec para a busca de informação, ao realizar uma consulta também é retornado as métricas recall e precision.
+
+A página padrão (http://localhost:8000) faz a busca de documentos com base no Bag of words, enquanto que para realizar uma consulta com o Doc2vec acesse (http://localhost:8000/doc2vec)
+
+
